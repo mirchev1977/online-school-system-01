@@ -23,9 +23,12 @@
 	    vendor: Object.keys(pkg.dependencies)
 	  },
 	  output: {
-	    path: PATHS.build,
-	    filename: '[name].js'
-	  },
+          path: PATHS.build,
+          filename: '[name].[hash].js',
+          // This is used for require.ensure. The setup
+          // will work without but this is useful to set.
+          chunkFilename: '[hash].js'
+        },
 	  plugins: [
 	    new HtmlWebpackPlugin({
 	      title: 'Online School System'
