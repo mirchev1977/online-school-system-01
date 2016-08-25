@@ -1,5 +1,7 @@
 (function(){
 	"use strict";
+
+	require('./main.css');
 	
 	var component = require('./component');
 
