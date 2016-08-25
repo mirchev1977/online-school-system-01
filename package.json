@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mirchev1977/online-school-system#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.2"
   }
 }
