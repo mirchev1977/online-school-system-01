@@ -41,6 +41,7 @@
 	    	{
 	    		devtool: 'source-map'
 	    	},
+	    	parts.minify(),
 	    	parts.setupCSS(PATHS.app)
 	    	);
 	    break;
