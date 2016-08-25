@@ -19,7 +19,6 @@
 	  // convenient with more complex configurations.
 	  entry: {
 	    app: PATHS.app,
-	    vendor: ['react']
 	  },
 	  output: {
 	    path: PATHS.build,
@@ -46,6 +45,10 @@
 		        'process.env.NODE_ENV',
 		        'production'
 		      ),
+	    	parts.extractBundle({
+		        name: 'vendor',
+		        entries: ['react']
+		    }),
 	    	parts.minify(),
 	    	parts.setupCSS(PATHS.app)
 	    	);
