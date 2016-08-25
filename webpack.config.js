@@ -6,6 +6,7 @@
 	const merge = require('webpack-merge');
 	const validate = require('webpack-validator');
 	const parts = require('./libs/parts');
+	const pkg = require('./package.json');
 
 
 	const PATHS = {
@@ -19,6 +20,7 @@
 	  // convenient with more complex configurations.
 	  entry: {
 	    app: PATHS.app,
+	    vendor: Object.keys(pkg.dependencies)
 	  },
 	  output: {
 	    path: PATHS.build,
