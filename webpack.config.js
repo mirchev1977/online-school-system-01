@@ -65,7 +65,8 @@
 		        entries: ['react']
 		    }),
 	    	parts.minify(),
-	    	parts.extractCSS(PATHS.style)
+	    	parts.extractCSS(PATHS.style),
+	    	parts.purifyCSS([PATHS.app])
 	    	);
 	    break;
 	  default:
