@@ -78,7 +78,7 @@
 		          path: PATHS.build,
 
 		          // Tweak this to match your GitHub project name
-		          publicPath: '/online-school-system/'
+		          publicPath: '/online-school-system/',
 
 		          filename: '[name].[chunkhash].js',
 		          chunkFilename: '[chunkhash].js'
