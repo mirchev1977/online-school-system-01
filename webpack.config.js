@@ -42,7 +42,12 @@
 	  			test: /\.scss$/,
 			  	loaders: ['style', 'css', 'sass'],
 			  	include: PATHS.style
-	  		}
+	  		},
+	  		{
+			  test: /\.(jpg|png)$/,
+			  loader: 'url?limit=25000',
+			  include: PATHS.images
+			}
 	  	]
 	  }
 	};
