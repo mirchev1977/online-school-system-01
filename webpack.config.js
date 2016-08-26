@@ -35,7 +35,16 @@
 	    new HtmlWebpackPlugin({
 	      title: 'Online School System'
 	    })
-	  ]
+	  ],
+	  module:{
+	  	loaders:[
+	  		{
+	  			test: /\.scss$/,
+			  	loaders: ['style', 'css', 'sass'],
+			  	include: PATHS.style
+	  		}
+	  	]
+	  }
 	};
 
 	var config;
