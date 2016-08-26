@@ -11,6 +11,7 @@
 
 	const PATHS = {
 	  app: path.join(__dirname, 'app'),
+	  style: path.join(__dirname, 'app', 'main.css'),
 	  build: path.join(__dirname, 'build')
 	};
 
@@ -19,6 +20,7 @@
 	  // We'll be using the latter form given it's
 	  // convenient with more complex configurations.
 	  entry: {
+	  	style: PATHS.style,
 	    app: PATHS.app,
 	    vendor: Object.keys(pkg.dependencies)
 	  },
@@ -60,7 +62,7 @@
 		        entries: ['react']
 		    }),
 	    	parts.minify(),
-	    	parts.extractCSS(PATHS.app)
+	    	parts.extractCSS(PATHS.style)
 	    	);
 	    break;
 	  default:
@@ -69,7 +71,7 @@
 	    	{
 	    		devtool: 'source-map'
 	    	},
-	      parts.setupCSS(PATHS.app),
+	      parts.extractCSS(PATHS.style),
 	      parts.devServer({
 	        // Customize host/port here if needed
 	        host: process.env.HOST,

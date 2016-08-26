@@ -1,7 +1,6 @@
 (function(){
 	"use strict";
 
-	require('./main.css');
 	require('react');
 	
 	var component = require('./component');
