@@ -61,9 +61,22 @@
 			  test: /\.(jpg|png)$/,
 			  loader: 'url?limit=25000',
 			  include: PATHS.images
+			},
+			{
+				test: /\.es6$/,
+				exclude: /node_modules/,
+				loader: "babel-loader"
+			},
+			{
+				test: /\.jsx?$/,
+				exclude: /node_modules/,
+				loader: "babel-loader"
 			}
 	  	]
-	  }
+	  },
+	  resolve: {
+			extensions: ['', '.js', '.es6', '.jsx']
+	   }
 	};
 
 	var config;
