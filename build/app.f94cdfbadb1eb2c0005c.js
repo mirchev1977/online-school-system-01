@@ -1,2 +1,2 @@
 webpackJsonp([0,3],{0:function(n,e,o){!function(){"use strict";o(1);var n=o(30);document.body.appendChild(n()),console.log("Hello from index.js")}()},30:function(n,e){!function(){"use strict";n.exports=function(){var n=document.createElement("h1");return n.className="pure-button",n.innerHTML="Hello world!!! This is a nice option! Ha ha!",n}}()}});
-//# sourceMappingURL=app.b483eae3acf9401ad872.js.map
+//# sourceMappingURL=app.f94cdfbadb1eb2c0005c.js.map

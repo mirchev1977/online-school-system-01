@@ -43,6 +43,12 @@
 	        loaders: ['jshint'],
 	        // define an include so we check just the files we need
 	        include: PATHS.app
+	      },
+	      {
+	        test: /\.es6?$/,
+	        loaders: ['jshint'],
+	        // define an include so we check just the files we need
+	        include: PATHS.app
 	      }
 	    ],
 	  	loaders:[
