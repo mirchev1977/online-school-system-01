@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/mirchev1977/online-school-system#readme",
   "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
     "clean-webpack-plugin": "^0.1.10",
     "css-loader": "^0.24.0",
     "extract-text-webpack-plugin": "^1.0.1",
