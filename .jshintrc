@@ -5,5 +5,18 @@
   "indent": 2,
   "latedef": false,
   "newcap": true,
-  "quotmark": "double"
+  "quotmark": "double",
+  "bitwise": true,
+  "eqeqeq": true,
+  "forin": true,
+  "freeze": true,
+  "futurehostile": true,
+  "latedef": "nofunc",
+  "noarg": true,
+  "nocomma": true,
+  "nonbsp": true,
+  "nonew": true,
+  "strict": true,
+  "undef": true,
+  "node": true
 }
