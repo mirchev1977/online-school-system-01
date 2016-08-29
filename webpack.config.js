@@ -15,6 +15,7 @@
 	    path.join(__dirname, 'node_modules', 'purecss'),
 	    path.join(__dirname, 'app', 'main.css')
 	  ],
+	  images: path.resolve(__dirname, "app/images"),
 	  build: path.join(__dirname, 'build')
 	};
 
