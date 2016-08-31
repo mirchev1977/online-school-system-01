@@ -9,6 +9,7 @@
   "author": "Miroslav Mirchev",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^15.0.2"
+    "hapi": "^15.0.2",
+    "inert": "^4.0.2"
   }
 }
