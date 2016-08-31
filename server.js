@@ -8,7 +8,7 @@ const server = new Hapi.Server();
 server.connection({ port: 9000 });
 
 server.register([
-    { register: require('./plugins/database') }
+    { register: require('./libs/plugins/hapi') }
 
 ], (err) => {
 
