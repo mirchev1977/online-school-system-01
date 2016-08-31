@@ -3,14 +3,14 @@
 const Hapi = require('hapi');
 // const Sqlite3 = require('sqlite3');
 
-const DB_FILE = __dirname + './oss.sqlite';
+// const DB_FILE = __dirname + './oss.sqlite';
 
 exports.register = function(server, options, next){
 
 
-	const db = new Sqlite3.Database(DB_FILE);
+	// const db = new Sqlite3.Database(DB_FILE);
 
-	server.bind({ db: db });
+	// server.bind({ db: db });
 
 	server.register([
             require('inert')
@@ -20,7 +20,7 @@ exports.register = function(server, options, next){
             return next(err);
         }
 
-        server.route(require('./routes/routes'));
+        // server.route(require('./routes/routes'));
 
         next();
     });
