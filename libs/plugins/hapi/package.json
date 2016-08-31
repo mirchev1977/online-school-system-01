@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Miroslav Mirchev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^15.0.2"
+  }
 }
