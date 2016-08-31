@@ -150,7 +150,7 @@
 	      parts.devServer({
 	        // Customize host/port here if needed
 	        host: process.env.HOST,
-	        port: process.env.PORT
+	        port: process.env.PORT || 3000
 	      })
 	    );
 	}

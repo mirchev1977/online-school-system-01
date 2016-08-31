@@ -30,7 +30,13 @@
 	      // 0.0.0.0 is available to all network devices
 	      // unlike default `localhost`.
 	      host: options.host, // Defaults to `localhost`
-	      port: options.port // Defaults to 8080
+	      port: options.port, // Defaults to 8080
+	      proxy: {
+	            '/api/*': {
+	                target: 'http://localhost:9000/',
+	                secure: false
+	            }
+        	}
 	    },
 	    plugins: [
 	      // Enable multi-pass compilation for enhanced performance
